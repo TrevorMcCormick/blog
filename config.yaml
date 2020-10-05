@@ -1,0 +1,53 @@
+baseURL: https://tmccormick92.com/
+languageCode: en-us
+title: Trevor's Notes
+theme: ghostwriter
+copyright: Trevor McCormick
+pygmentsUseClasses: true
+pygmentsCodefences: true
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    tabWidth: 2
+
+author:
+  name: Trevor McCormick
+  profile: ""
+
+taxonomies:
+  tag: tags
+
+params:
+  mainSections:
+    - notes
+  intro: true
+  headline: Trevor's Notes
+  description: Notes on Data Engineering Stuff
+  github: "https://github.com/TrevorMcCormick"
+  linkedin: "https://linkedin.com/in/trevormccormick/"
+  email: trevor.ryan.mccormick@gmail.com
+  rss: false
+  shareGitHub: true
+  shareLinkedIn: true
+  dateFormat: "Mon, Jan 2, 2006"
+  readingTime: true
+  readingTimeText: "Estimated reading time:"
+
+permalinks:
+  post: "/:filename/"
+
+menu:
+  main:
+    - name: Notes
+      url: /
+      weight: 1
+    - name: About
+      url: /about/
+      weight: 2
