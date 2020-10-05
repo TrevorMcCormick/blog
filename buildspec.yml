@@ -16,7 +16,6 @@ phases:
       - echo Build started on `date`
       - cd $CODEBUILD_SRC_DIR
       - hugo --quiet
-      - aws s3 sync --delete _site/ s3://tmccormick92.com
       - aws cloudfront create-invalidation --distribution-id ENXDKV0O7A0QX --paths '/*'
     finally:
       - echo Building the HTML files finished
