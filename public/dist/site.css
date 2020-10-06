@@ -66,8 +66,8 @@ table tbody>tr:nth-child(odd)>td, table tbody>tr:nth-child(odd)>th { background-
 table th { padding: 0 10px 10px; text-align: left; }
 table td { padding: 10px; }
 table tr { border-bottom: 1px dotted #aeadad; }
-::selection { background: #fff5b8; color: #000; display: block; }
-::-moz-selection { background: #fff5b8; color: #000; display: block; }
+::selection { background: #e1b382; color: #000; display: block; }
+::-moz-selection { background: #e1b382; color: #000; display: block; }
 .fluid-width-video-wrapper { margin-bottom: 40px; }
 .hidden { text-indent: -9999px; visibility: hidden; display: none; }
 .clearfix:after { content: ""; display: table; clear: both; }
