@@ -11,6 +11,7 @@ The AWS Certified Cloud Practitioner Exam assumes you have some familiarity with
 
 * [Stanford CS 101 - Introduction to Computing Principles](https://web.stanford.edu/class/cs101/)
 * [Harvard CS50 - Introduction to Computer Science](https://online-learning.harvard.edu/course/cs50-introduction-computer-science?delta=0)
+    
     This course features one of my favorite professors of all time -- [David Malan](https://www.newyorker.com/news/our-local-correspondents/how-harvards-star-computer-science-professor-built-a-distance-learning-empire).
 
 Once you're finished with these courses, you will be able to explain how computers work, how the Internet works, and you'll have a great start working with programming languages. Most importantly, you will be ready to learn how the cloud works. 
@@ -20,9 +21,11 @@ Once you're finished with these courses, you will be able to explain how compute
 There are two cloud training platforms I will recommend for this certification: A Cloud Guru and Cloud Academy. 
 
 * [A Cloud Guru - AWS Certified Cloud Practitioner 2020](https://acloud.guru/learn/aws-certified-cloud-practitioner)
+    
     Designed for the non-technical crowd, this course provides 10 hours of videos, several quizzes along the way, and a final practice exam. The instructor [Ryan Kroonenburg](https://aws.amazon.com/developer/community/heroes/ryan-kroonenburg/) is phenomenal. I used this platform exclusively, along with the whitepapers below, and I passed my exam. [A Cloud Guru's current pricing](https://acloudguru.com/pricing) is $32/month, and it includes access to all learning paths. I've found it extremely worthwhile, and I've been fortunate to use some education reimbursement funds from my employer to cover the cost for the full year. There is also a Personal Plus plan, which I have not used as of 10/2020, but I do plan switch plans in the coming months.
 
 * [Cloud Academy - AWS Certified Cloud Practitioner Preparation](https://cloudacademy.com/learning-paths/cloud-academy-cloud-practitioner-certification-preparation-for-aws-180/)
+    
     Another cloud platform out of London, this is a popular learning recommendation. I have no personal experience with this platform, but you can check out their free 7-day trial to see if you like it better than A Cloud Guru. [Their pricing is about 50% more expensive](https://cloudacademy.com/pricing/?direct=true) at $49/month.
 
 ## Whitepapers
