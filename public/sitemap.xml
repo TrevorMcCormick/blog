@@ -18,11 +18,6 @@
   </url>
   
   <url>
-    <loc>https://tmccormick92.com/notes/aws/</loc>
-    <lastmod>2020-10-04T19:08:22-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tmccormick92.com/tags/certification/</loc>
     <lastmod>2020-10-04T19:08:22-04:00</lastmod>
   </url>
@@ -44,6 +39,11 @@
   
   <url>
     <loc>https://tmccormick92.com/</loc>
+    <lastmod>2020-10-04T19:08:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tmccormick92.com/notes/aws_ccp/</loc>
     <lastmod>2020-10-04T19:08:22-04:00</lastmod>
   </url>
   
