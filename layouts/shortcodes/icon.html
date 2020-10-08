@@ -1,0 +1,11 @@
+{{ $width := .Get 1 | default 100 }}
+{{ $height := .Get 2 | default 100 }}
+{{ $scale := .Get 3 | default 1 }}
+<svg width="{{ $width }}" height="{{ $height }}">
+    <g transform="scale({{ $scale }})">
+        {{- $fname:=print "icons/" ( .Get 0 ) ".svg" -}}
+        {{- $path:="<path" -}}
+        {{- $fill:="<path fill=\"#2d545e\"" -}}
+        {{ replace (readFile $fname) $path $fill | safeHTML }}
+    </g>
+</svg>
