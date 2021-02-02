@@ -7,9 +7,9 @@ description: Trevor McCormick
 
 I'm 28 years old, living in Wyandotte with my wife Haley, and our dog Captain.  
 
-I work in marketing technology and data engineering at General Motors. 
+I work in marketing technology and data engineering at General Motors. I'm leading the data activation team to build out our customer data platform.
 
-This website contains notes, study materials, and lessons from my journey in data engineering. 
+This website was designed to publish thoughts, how-to's, resources, notes, and everything in-between. I write about data and marketing.
 
 ![](/page/images/central_park.jpg#align-center)
 
