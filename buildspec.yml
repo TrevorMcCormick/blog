@@ -4,7 +4,6 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
       - apt-get -qq update && apt-get -qq install curl
       - apt-get -qq install asciidoctor
       - curl -s -L https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb -o hugo.deb
@@ -18,7 +17,7 @@ phases:
       - cd $CODEBUILD_SRC_DIR
       - hugo --quiet
       - aws s3 sync --delete public/ s3://trmccormick.com
-      - aws cloudfront create-invalidation --distribution-id E1Q1864L3XVUUI --paths '/*'
+      - aws cloudfront create-invalidation --distribution-id E31546NI4VOO5F --paths '/*'
     finally:
       - echo Building the HTML files finished
 artifacts:
