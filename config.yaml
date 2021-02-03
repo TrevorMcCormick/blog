@@ -29,7 +29,7 @@ params:
     - blog
   intro: true
   headline: Trevor's Blog
-  description: Blog About Data + Marketing
+  description: Thoughts on Cloud, Data, and Marketing
   github: "https://github.com/TrevorMcCormick"
   linkedin: "https://linkedin.com/in/trevormccormick/"
   email: trevor.ryan.mccormick@gmail.com
@@ -46,7 +46,7 @@ permalinks:
 menu:
   main:
     - name: Blog
-      url: /
+      url: /blog/
       weight: 1
     - name: About
       url: /about/
