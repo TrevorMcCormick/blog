@@ -17,7 +17,7 @@ phases:
       - cd $CODEBUILD_SRC_DIR
       - hugo --quiet
       - aws s3 sync --delete public/ s3://trmccormick.com
-      - aws cloudfront create-invalidation --distribution-id EYPHWB4VITPT2 --paths '/*'
+      - aws cloudfront create-invalidation --distribution-id E1Q1864L3XVUUI --paths '/*'
     finally:
       - echo Building the HTML files finished
 artifacts:
