@@ -4,10 +4,8 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - apt-get -qq install curl
-      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-      - apt-get -qq update
-      - apt-get -qq install asciidoctor
+      - yum install curl
+      - yum install asciidoctor
       - curl -s -L https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb -o hugo.deb
       - dpkg -i hugo.deb
     finally:
