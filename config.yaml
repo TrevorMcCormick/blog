@@ -26,7 +26,7 @@ taxonomies:
 
 params:
   mainSections:
-    - notes
+    - blog
   intro: true
   headline: Trevor's Blog
   description: Blog About Data + Marketing
