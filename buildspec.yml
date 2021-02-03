@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Entered the install phase...
       - yum install curl
-      - yum install asciidoctor
+      - yum install asciidoctor -y
       - curl -s -L https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb -o hugo.deb
       - dpkg -i hugo.deb
     finally:
