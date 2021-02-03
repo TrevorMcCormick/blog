@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How-To on Trevor&#39;s Blog</title>
+    <link>https://trmccormick.com/tags/how-to/</link>
+    <description>Recent content in How-To on Trevor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Trevor McCormick</copyright>
+    <lastBuildDate>Tue, 02 Feb 2021 11:20:22 -0400</lastBuildDate>
+    
+	<atom:link href="https://trmccormick.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>🏄 Build a fast Hugo blog on AWS for $0.50 per month </title>
+      <link>https://trmccormick.com/blog/aws_hugo/</link>
+      <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/blog/aws_hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
