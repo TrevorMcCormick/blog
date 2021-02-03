@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://trmccormick.com/drafts/</loc>
+    <lastmod>2021-02-02T11:20:22-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://trmccormick.com/tags/how-to/</loc>
     <lastmod>2021-02-02T11:20:22-04:00</lastmod>
   </url>
@@ -43,7 +48,7 @@
   </url>
   
   <url>
-    <loc>https://trmccormick.com/blog/aws_hugo/</loc>
+    <loc>https://trmccormick.com/drafts/aws_hugo/</loc>
     <lastmod>2021-02-02T11:20:22-04:00</lastmod>
   </url>
   
