@@ -1,5 +1,5 @@
 ---
-title: "☁️ AWS Certified Solutions Architect Associate"
+title: "☁️ Advice on the AWS Certified Solutions Architect Associate Exam"
 date: 2021-02-02T11:20:22-04:00
 draft: false
 tags: [AWS, Cloud, Certification]

@@ -1,5 +1,5 @@
 ---
-title: "☁️ AWS Certified Cloud Practitioner"
+title: "☁️ Advice on the AWS Certified Cloud Practitioner Exam"
 date: 2020-10-04T19:08:22-04:00
 draft: false
 tags: [AWS, Cloud, Certification]
