@@ -54,10 +54,12 @@ ul li, ol li { margin: 0 0 2px; }
 ul li:last-of-type, ol li:last-of-type { margin-bottom: 0; }
 blockquote { border-left: 1px dotted #2d545e; margin: 40px 0; padding: 5px 30px; }
 blockquote p { color: #aeadad; display: block; font-style: italic; margin: 0; width: 100%; }
-img { display: block; margin: 40px 0; max-width: 50%; height: auto;}
+img { display: block; margin: 40px 0; max-width: 80%; height: auto;}
 img[src$="align-center"] { margin: auto; }
 img[src$="align-left"] { float: left; margin-right: 40px; }
 img[src$="align-right"] { float: right; margin-left: 40px; }
+img[src$="big"] { display: block; margin: 40px 0; max-width: 100%; height: auto;}
+img[src$="tiny"] { display: block; margin: 40px 0; max-width: 10%; height: auto;}
 pre { border: 1px solid #dddbcc; border-radius: 3px; margin: 0 0 20px; overflow-x: auto; padding: 10px; font-size: 16px; }
 pre code { padding: 0; }
 code { padding: 2px 4px; font-size: 90%; border-radius: 4px; background-color: #f1f0ea; }

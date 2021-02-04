@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>☁️ AWS Certified Solutions Architect Associate</title>
+      <title>☁️ Advice on the AWS Certified Solutions Architect Associate Exam</title>
       <link>https://trmccormick.com/blog/aws_csaa/</link>
       <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
       
@@ -24,12 +24,13 @@ Advice so far:
     </item>
     
     <item>
-      <title>🏄 Build a fast Hugo blog on AWS for $0.50 per month </title>
+      <title>👨‍💻 How To Build a Serverless Hugo Blog on AWS for $0.51 per month</title>
       <link>https://trmccormick.com/drafts/aws_hugo/</link>
       <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
       
       <guid>https://trmccormick.com/drafts/aws_hugo/</guid>
-      <description></description>
+      <description>This post is in draft mode and is not done yet!
+Below is an AWS architecture diagram I created using diagrams.net, the free version of draw.io. This diagram visualizes how my website runs for just $0.51 a month (exc;uding the $12/year domain name registration). While making this, I was a little fuzzy on how Route53 actually worked, so I included some additional detail on how it interfaces with an example ISP.</description>
     </item>
     
     <item>
@@ -54,7 +55,7 @@ Me (Trevor) &amp; My Wife (Haley) in Central Park </description>
     </item>
     
     <item>
-      <title>☁️ AWS Certified Cloud Practitioner</title>
+      <title>☁️ Advice on the AWS Certified Cloud Practitioner Exam</title>
       <link>https://trmccormick.com/blog/aws_ccp/</link>
       <pubDate>Sun, 04 Oct 2020 19:08:22 -0400</pubDate>
       
