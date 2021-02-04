@@ -115,7 +115,7 @@ Okay back to the service role. CodeBuild needs to work with s3 and Cloudfront, s
     "Statement": [
         {
             "Resource": [
-                "arn:aws:s3:::trmccormick.com",
+                "arn:aws:s3:::trmccormick.com/*",
             ],
             "Sid": "s3_sync",
             "Effect": "Allow",
