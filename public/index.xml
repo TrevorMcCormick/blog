@@ -1,68 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Trevor&#39;s Blog</title>
-    <link>https://trmccormick.com/</link>
-    <description>Recent content on Trevor&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Tue, 02 Feb 2021 11:20:22 -0400</lastBuildDate>
-    
-	<atom:link href="https://trmccormick.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>☁️ Advice on the AWS Certified Solutions Architect Associate Exam</title>
-      <link>https://trmccormick.com/blog/aws_csaa/</link>
-      <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/blog/aws_csaa/</guid>
-      <description>Status I am currently scheduled to take the AWS Certified Solutions Architect exam in March 2021. I just finished taking the A Cloud Guru - AWS Certified Solutions Architect Associate SAA-C02 course, and I&amp;rsquo;m continuing to refine my knowledge gaps by building some test projects within AWS before I take the exam.
-Advice so far:
- read through every major service FAQ: IAM, S3, EC2, RDS, VPC, CloudFront, and Route53 draw out AWS architecture diagrams by hand, and be able to draw out full solutions by memory know the highly-available architecture best practices by heart the philosophy of the AWS business model shines through every service there are tons of resources on individual components of AWS, so if you don&amp;rsquo;t understand something, chances are there are in-depth articles explaining it  </description>
-    </item>
-    
-    <item>
-      <title>👨‍💻 How To Build a Serverless Hugo Blog on AWS for $0.51 per month</title>
-      <link>https://trmccormick.com/drafts/aws_hugo/</link>
-      <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/drafts/aws_hugo/</guid>
-      <description>This post is in draft mode and is not done yet!
-Below is an AWS architecture diagram I created using diagrams.net, the free version of draw.io. This diagram visualizes how my website runs for just $0.51 a month (exc;uding the $12/year domain name registration). While making this, I was a little fuzzy on how Route53 actually worked, so I included some additional detail on how it interfaces with an example ISP.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://trmccormick.com/about/</link>
-      <pubDate>Sun, 04 Oct 2020 21:19:01 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/about/</guid>
-      <description>I&amp;rsquo;m 28 years old, living in Wyandotte with my wife Haley, and our dog Captain.
-I work in marketing technology and data engineering at General Motors. I&amp;rsquo;m leading the data activation team to build out our customer data platform.
-This website was designed to publish thoughts, how-to&amp;rsquo;s, resources, notes, and everything in-between. I write about data and marketing.
-Me (Trevor) &amp; My Wife (Haley) in Central Park </description>
-    </item>
-    
-    <item>
-      <title>Shortcode examples</title>
-      <link>https://trmccormick.com/shortcode_examples/</link>
-      <pubDate>Sun, 04 Oct 2020 21:19:01 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/shortcode_examples/</guid>
-      <description>Pre-loaded shortcodes ShortcodesMy own shortcodes  Icons take arguments: svg, width, height, scale. These default to 100, 100, 1.   </description>
-    </item>
-    
-    <item>
-      <title>☁️ Advice on the AWS Certified Cloud Practitioner Exam</title>
-      <link>https://trmccormick.com/blog/aws_ccp/</link>
-      <pubDate>Sun, 04 Oct 2020 19:08:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/blog/aws_ccp/</guid>
-      <description>Foundations The AWS Certified Cloud Practitioner Exam assumes you have some familiarity with cloud concepts. If you&amp;rsquo;re completely unfamiliar with those, it may benefit you to learn or review some introductory computing concepts. When I was in college, I completed two courses that gave me a great foundation:
-  Stanford CS 101 - Introduction to Computing Principles  Harvard CS50 - Introduction to Computer ScienceThis course features one of my favorite professors of all time &amp;ndash; David Malan.</description>
-    </item>
-    
-  </channel>
-</rss>
