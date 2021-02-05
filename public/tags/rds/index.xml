@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RDS on Trevor&#39;s Blog</title>
+    <link>https://trmccormick.com/tags/rds/</link>
+    <description>Recent content in RDS on Trevor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Trevor McCormick</copyright>
+    <lastBuildDate>Thu, 04 Feb 2021 11:20:22 -0400</lastBuildDate>
+    
+	<atom:link href="https://trmccormick.com/tags/rds/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>🐍 How To Query PostgreSQL with Python</title>
+      <link>https://trmccormick.com/blog/python_psql/</link>
+      <pubDate>Thu, 04 Feb 2021 11:20:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/blog/python_psql/</guid>
+      <description>I wanted to document how I&amp;rsquo;ve been turning extracts from Postgres into Pandas dataframes. I haven&amp;rsquo;t spent any time optimizing this code, but it works, and it is pretty easy to read. The only requirement to run these functions would be a valid Postgres database. I&amp;rsquo;ll walk through:
+ how to create a public PostgreSQL instance in RDS using free-tier   RDS The only thing you have to do in the AWS console is create a Postgres DB instance and make sure it is open to the public (just for this example).</description>
+    </item>
+    
+  </channel>
+</rss>
