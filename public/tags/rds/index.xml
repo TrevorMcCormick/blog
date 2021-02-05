@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>🐍 How To Query PostgreSQL with Python</title>
+      <title>🐍 How To Query PostgreSQL in AWS RDS with Python</title>
       <link>https://trmccormick.com/blog/python_psql/</link>
       <pubDate>Thu, 04 Feb 2021 11:20:22 -0400</pubDate>
       
       <guid>https://trmccormick.com/blog/python_psql/</guid>
-      <description>I wanted to document how I&amp;rsquo;ve been turning extracts from Postgres into Pandas dataframes. I haven&amp;rsquo;t spent any time optimizing this code, but it works, and it is pretty easy to read. The only requirement to run these functions would be a valid Postgres database. I&amp;rsquo;ll walk through:
- how to create a public PostgreSQL instance in RDS using free-tier   RDS The only thing you have to do in the AWS console is create a Postgres DB instance and make sure it is open to the public (just for this example).</description>
+      <description>In this post I&amp;rsquo;ll walk through:
+ how to create a public PostgreSQL instance in RDS using free-tier how to create a table and load it with data from a csv file how to query data from that table using psycopg2  RDS The only thing you have to do in the AWS console is create a Postgres DB instance and make sure it is open to the public (just for this example).</description>
     </item>
     
   </channel>
