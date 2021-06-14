@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on Trevor&#39;s Blog</title>
+    <link>https://trmccormick.com/drafts/</link>
+    <description>Recent content in Drafts on Trevor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Trevor McCormick</copyright><atom:link href="https://trmccormick.com/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://trmccormick.com/drafts/data-warehouse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trmccormick.com/drafts/data-warehouse/</guid>
+      <description>Foundation of a DW:
+ Optimized for Business Users (elaborate) Consistent Resilient (able to adapt) Realistic (speed) Accessible (easy, but also restricted) Authoritative (core of making analytical decisions) Acceptable (by end users)  </description>
+    </item>
+    
+  </channel>
+</rss>

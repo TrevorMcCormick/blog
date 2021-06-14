@@ -5,6 +5,7 @@ theme: ghostwriter
 copyright: Trevor McCormick
 pygmentsUseClasses: true
 pygmentsCodefences: true
+custom_js: ["js/custom.js"]
 
 markup:
   highlight:

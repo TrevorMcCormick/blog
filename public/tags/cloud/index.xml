@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Tue, 02 Feb 2021 11:20:22 -0400</lastBuildDate>
-    
-	<atom:link href="https://trmccormick.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Feb 2021 11:20:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>☁️ Advice on the AWS Certified Solutions Architect Associate Exam</title>
       <link>https://trmccormick.com/blog/aws_csaa/</link>
