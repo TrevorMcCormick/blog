@@ -1,8 +1,8 @@
 ---
 title: "👨‍💻 How To Build a Serverless Hugo Blog on AWS for $0.51 per month"
 date: 2021-02-02T11:20:22-04:00
-draft: true
-tags: [AWS, How-To, Serverless, Hugo]
+draft: false
+tags: [AWS, How-To, Hugo]
 ---
 
 This post assumes you already have some familiarity with [Hugo](https://gohugo.io/) for building a blog, and you have set up a [free-tier AWS account](https://aws.amazon.com/free/). You don't have to be an expert at either Hugo or AWS to follow along with the guide below. Really the only requirement is that you're able to [follow the Hugo quick start guide](https://gohugo.io/getting-started/quick-start/).
@@ -13,7 +13,7 @@ Below is an AWS architecture diagram I created using [diagrams.net](diagrams.net
 3. **S3** -- hosting your blog as a static website
 4. Your Code -- generating a Hugo blog 
 5. **GitHub** -- hosting your code
-6. **CodeBuild** -- building your Hugo site
+6. **CodeBuild** -- building your Hugo site (CI/CD)
 
 ![](/page/images/trmccormick.com.jpg#align-center)
  
@@ -152,8 +152,8 @@ Okay back to the service role. CodeBuild needs to work with s3 and Cloudfront, s
 }
 ```
 
-That's it, now you should be able to push code to your GitHub repo and watch your CodeBuild log run through the buildspec, and your site should reflect changes in just a matter of minutes. I've been running my website for the better part of a year using this serverless strategy, and here is a picture of my monthly bill. I'm still on free tier, but I don't expect my website to go through too many builds in a month, or get too much traffic, so I'll probably always stay near $0.51 per month.
+That's it, now you should be able to push code to your GitHub repo and CodeBuild will run through the buildspec, and your site should reflect changes in just a matter of minutes. I've been running my website since 2019 using this serverless strategy. Here is a picture of my monthly bill. I'll probably always stay near $0.51 per month.
 
 ![](/page/images/aws_bill_jan2021.png#align-center)
 
-Thanks for reading and please contact me via email if you see any updates that could improve this post.
+Thanks for reading!
