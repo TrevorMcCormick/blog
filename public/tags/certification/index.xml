@@ -7,13 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Tue, 02 Feb 2021 11:20:22 -0400</lastBuildDate>
-    
-	<atom:link href="https://trmccormick.com/tags/certification/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Feb 2021 11:20:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/certification/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>☁️ Advice on the AWS Certified Solutions Architect Associate Exam</title>
+      <title>☁️ How to Study for the AWS Certified Solutions Architect Associate Exam</title>
       <link>https://trmccormick.com/blog/aws_csaa/</link>
       <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
       
@@ -24,7 +20,7 @@ Advice so far:
     </item>
     
     <item>
-      <title>☁️ Advice on the AWS Certified Cloud Practitioner Exam</title>
+      <title>☁️ How to Study for the AWS Certified Cloud Practitioner Exam</title>
       <link>https://trmccormick.com/blog/aws_ccp/</link>
       <pubDate>Sun, 04 Oct 2020 19:08:22 -0400</pubDate>
       

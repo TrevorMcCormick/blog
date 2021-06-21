@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leetcodes on Trevor&#39;s Blog</title>
+    <link>https://trmccormick.com/leetcode/</link>
+    <description>Recent content in Leetcodes on Trevor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Trevor McCormick</copyright>
+    <lastBuildDate>Sun, 20 Jun 2021 20:45:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>485. Max Consecutive Ones</title>
+      <link>https://trmccormick.com/leetcode/max_consecutive_ones_485/</link>
+      <pubDate>Sun, 20 Jun 2021 20:45:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/leetcode/max_consecutive_ones_485/</guid>
+      <description>Here is my thought process and solutions for Leetcode problem 485. Max Consecutive Ones.
+ Given a binary array nums, return the maximum number of consecutive 1&amp;rsquo;s in the array.
+ You need to do three things to solve this problem:
+ Determine if the current index is a 1 or a 0 Find the index ranges with consecutive 1s Compare these index ranges to find the range with the maximum length Return the length of that range  I solved this problem in: Python3, Javascript, mySQL, and Java:</description>
+    </item>
+    
+  </channel>
+</rss>

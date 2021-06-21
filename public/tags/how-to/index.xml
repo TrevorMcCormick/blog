@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Thu, 04 Feb 2021 11:20:22 -0400</lastBuildDate>
-    
-	<atom:link href="https://trmccormick.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 04 Feb 2021 11:20:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🐍 How To Query PostgreSQL in AWS RDS with Python</title>
       <link>https://trmccormick.com/blog/python_psql/</link>

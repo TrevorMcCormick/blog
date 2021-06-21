@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on Trevor&#39;s Blog</title>
+    <link>https://trmccormick.com/drafts/</link>
+    <description>Recent content in Drafts on Trevor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Trevor McCormick</copyright>
+    <lastBuildDate>Sun, 13 Jun 2021 08:45:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⚙️ Learning Data Structures</title>
+      <link>https://trmccormick.com/drafts/algorithms_and_data_structures/</link>
+      <pubDate>Sun, 13 Jun 2021 08:45:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/drafts/algorithms_and_data_structures/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

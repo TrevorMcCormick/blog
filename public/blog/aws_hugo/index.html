@@ -8,7 +8,7 @@
 Below is an AWS architecture diagram I created using diagrams.net, the free version of draw.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.74.3" />
+        <meta name="generator" content="Hugo 0.82.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -96,7 +96,7 @@ Below is an AWS architecture diagram I created using diagrams.net, the free ver
 <li><strong>S3</strong> &ndash; hosting your blog as a static website</li>
 <li>Your Code &ndash; generating a Hugo blog</li>
 <li><strong>GitHub</strong> &ndash; hosting your code</li>
-<li><strong>CodeBuild</strong> &ndash; building your Hugo site</li>
+<li><strong>CodeBuild</strong> &ndash; building your Hugo site (CI/CD)</li>
 </ol>
 <p><img src="/page/images/trmccormick.com.jpg#align-center" alt=""></p>
 <h2 id="route53">Route53</h2>
@@ -158,33 +158,33 @@ Below is an AWS architecture diagram I created using diagrams.net, the free ver
 <p>Each time you make any changes to your Hugo site, you&rsquo;d need to overwrite all of the files in your S3 bucket. That&rsquo;s fine if you want to keep it pretty simple. If you&rsquo;re creating a lot of content or making frequent changes to your Hugo site, you probably want to work through the next sections that help you automate that task using GitHub and CodeBuild.</p>
 <h2 id="your-code">Your Code</h2>
 <p>I won&rsquo;t tell you how you should organize your Hugo build, but there is one specific thing you&rsquo;ll need to add into your git repository: a build spec. This is basically an instructions file. With CodeBuild, you&rsquo;ll be telling a fresh computer how to build your site. There will be modules it needs to install, files it needs to build, and it will need to know what to do with the files it builds. Below is my <code>buildspec.yml</code> file in the root directory of my code repository.</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">version</span><span class="p">:</span><span class="w"> </span><span class="m">0.2</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">0.2</span><span class="w">
 </span><span class="w">
-</span><span class="w"></span><span class="k">phases</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">install</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">commands</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- echo<span class="w"> </span>Entered<span class="w"> </span>the<span class="w"> </span>install<span class="w"> </span>phase...<span class="w">
-</span><span class="w">      </span>- yum<span class="w"> </span>install<span class="w"> </span>curl<span class="w">
-</span><span class="w">      </span>- yum<span class="w"> </span>install<span class="w"> </span>asciidoctor<span class="w"> </span>-y<span class="w">
-</span><span class="w">      </span>- curl<span class="w"> </span>-s<span class="w"> </span>-L<span class="w"> </span>https<span class="p">:</span>//github.com/gohugoio/hugo/releases/download/v0<span class="m">.80.0</span>/hugo_0<span class="m">.80</span>.0_Linux-64bit.deb<span class="w"> </span>-o<span class="w"> </span>hugo.deb<span class="w">
-</span><span class="w">      </span>- dpkg<span class="w"> </span>-i<span class="w"> </span>hugo.deb<span class="w">
-</span><span class="w">    </span><span class="k">finally</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- echo<span class="w"> </span>Installation<span class="w"> </span>done<span class="w">
-</span><span class="w">  </span><span class="k">build</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">commands</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- echo<span class="w"> </span>Building<span class="w"> </span>...<span class="w">
-</span><span class="w">      </span>- echo<span class="w"> </span>Build<span class="w"> </span>started<span class="w"> </span>on<span class="w"> </span>`date`<span class="w">
-</span><span class="w">      </span>- cd<span class="w"> </span>$CODEBUILD_SRC_DIR<span class="w">
-</span><span class="w">      </span>- hugo<span class="w"> </span>--quiet<span class="w">
-</span><span class="w">      </span>- aws<span class="w"> </span>s3<span class="w"> </span>sync<span class="w"> </span>--delete<span class="w"> </span>public/<span class="w"> </span>s3<span class="p">:</span>//your-bucket<span class="w">
-</span><span class="w">      </span>- aws<span class="w"> </span>cloudfront<span class="w"> </span>create-invalidation<span class="w"> </span>--distribution-id<span class="w"> </span>xxx<span class="w"> </span>--paths<span class="w"> </span><span class="s1">&#39;/*&#39;</span><span class="w">
-</span><span class="w">    </span><span class="k">finally</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- echo<span class="w"> </span>Build<span class="w"> </span>finished<span class="w">
-</span><span class="w"></span><span class="k">artifacts</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">files</span><span class="p">:</span><span class="w">
+</span><span class="w"></span><span class="nt">phases</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">install</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">echo Entered the install phase...</span><span class="w">
+</span><span class="w">      </span>- <span class="l">yum install curl</span><span class="w">
+</span><span class="w">      </span>- <span class="l">yum install asciidoctor -y</span><span class="w">
+</span><span class="w">      </span>- <span class="l">curl -s -L https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.deb -o hugo.deb</span><span class="w">
+</span><span class="w">      </span>- <span class="l">dpkg -i hugo.deb</span><span class="w">
+</span><span class="w">    </span><span class="nt">finally</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">echo Installation done</span><span class="w">
+</span><span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">echo Building ...</span><span class="w">
+</span><span class="w">      </span>- <span class="l">echo Build started on `date`</span><span class="w">
+</span><span class="w">      </span>- <span class="l">cd $CODEBUILD_SRC_DIR</span><span class="w">
+</span><span class="w">      </span>- <span class="l">hugo --quiet</span><span class="w">
+</span><span class="w">      </span>- <span class="l">aws s3 sync --delete public/ s3://your-bucket</span><span class="w">
+</span><span class="w">      </span>- <span class="l">aws cloudfront create-invalidation --distribution-id xxx --paths &#39;/*&#39;</span><span class="w">
+</span><span class="w">    </span><span class="nt">finally</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">echo Build finished</span><span class="w">
+</span><span class="w"></span><span class="nt">artifacts</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">files</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span>- <span class="s1">&#39;**/*&#39;</span><span class="w">
-</span><span class="w">  </span><span class="k">base-directory</span><span class="p">:</span><span class="w"> </span>$CODEBUILD_SRC_DIR/public<span class="w">
-</span><span class="w">  </span><span class="k">discard-paths</span><span class="p">:</span><span class="w"> </span>no<span class="w">
+</span><span class="w">  </span><span class="nt">base-directory</span><span class="p">:</span><span class="w"> </span><span class="l">$CODEBUILD_SRC_DIR/public</span><span class="w">
+</span><span class="w">  </span><span class="nt">discard-paths</span><span class="p">:</span><span class="w"> </span><span class="kc">no</span><span class="w">
 </span></code></pre></div><p>Three things to note here:</p>
 <ul>
 <li>We&rsquo;re using commands <code>yum install</code> because we&rsquo;ll be using AWS Linux as our environment machine in CodeBuild. If you run into trouble here, it&rsquo;s because you&rsquo;ve selected a different build environment in CodeBuild.</li>
@@ -256,9 +256,9 @@ Below is an AWS architecture diagram I created using diagrams.net, the free ver
         <span class="p">}</span>
     <span class="p">]</span>
 <span class="p">}</span>
-</code></pre></div><p>That&rsquo;s it, now you should be able to push code to your GitHub repo and watch your CodeBuild log run through the buildspec, and your site should reflect changes in just a matter of minutes. I&rsquo;ve been running my website for the better part of a year using this serverless strategy, and here is a picture of my monthly bill. I&rsquo;m still on free tier, but I don&rsquo;t expect my website to go through too many builds in a month, or get too much traffic, so I&rsquo;ll probably always stay near $0.51 per month.</p>
+</code></pre></div><p>That&rsquo;s it, now you should be able to push code to your GitHub repo and CodeBuild will run through the buildspec, and your site should reflect changes in just a matter of minutes. I&rsquo;ve been running my website since 2019 using this serverless strategy. Here is a picture of my monthly bill. I&rsquo;ll probably always stay near $0.51 per month.</p>
 <p><img src="/page/images/aws_bill_jan2021.png#align-center" alt=""></p>
-<p>Thanks for reading and please contact me via email if you see any updates that could improve this post.</p>
+<p>Thanks for reading!</p>
 
 </div>
 
@@ -271,8 +271,6 @@ Below is an AWS architecture diagram I created using diagrams.net, the free ver
                 <a href="/tags/aws/">AWS</a>, 
             
                 <a href="/tags/how-to/">How-To</a>, 
-            
-                <a href="/tags/serverless/">Serverless</a>, 
             
                 <a href="/tags/hugo/">Hugo</a>
             
