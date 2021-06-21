@@ -41,15 +41,22 @@ body {font-family: Arial;}
   border: 1px solid #ccc;
   border-top: none;
 }
+/* Style the MathJax content so it doesn't scroll so far*/
+mjx-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+}
 </style>
+
 </head>
 <body>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Python3')">Python3</button>
-  <button class="tablinks" onclick="openCity(event, 'Javascript')">Javascript</button>
-  <button class="tablinks" onclick="openCity(event, 'mySQL')">mySQL</button>
-  <button class="tablinks" onclick="openCity(event, 'Java')">Java</button>
+  <button class="tablinks active" onclick="openCode(event, 'Python3')">Python3</button>
+  <button class="tablinks" onclick="openCode(event, 'Javascript')">Javascript</button>
+  <button class="tablinks" onclick="openCode(event, 'mySQL')">mySQL</button>
+  <button class="tablinks" onclick="openCode(event, 'Java')">Java</button>
 </div>
 
 <div id="Python3" class="tabcontent">
@@ -165,7 +172,8 @@ body {font-family: Arial;}
 </div>
 
 <script>
-function openCity(evt, cityName) {
+openCode(event, "Python3");
+function openCode(evt, language) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -175,15 +183,30 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-// start with python3
-openCity(event, 'Python3')
+  document.getElementById(language).style.display = "block";
+  if (evt) {evt.currentTarget.classList.add("active");}
+};
 </script>
+<script>
+  var mybtn = document.getElementsByClassName("tablinks")[0];
+  mybtn.click();
+  </script>
 <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script>
+  
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </body>
 </html> 
