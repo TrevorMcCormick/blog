@@ -21,8 +21,21 @@ I solved this problem in: **Python3**, **Javascript**, **mySQL**, and **Java**:
 
 **Complexity**  
 
-{{< mathjax >}} $$\text{Time: }\\\small{ O(N) }\text{ where }\\\small{ N }\text{ is the number of elements in the array}\\ \hspace{100cm}$$ {{< /mathjax >}}
-{{< mathjax >}} $$\text{Space: }\\\small{ O(1)}\hspace{100cm}$$ {{< /mathjax >}}
+{{< mathjax >}} $$
+                \text{Time: }
+                \\\small{ O(N) }
+                \text{ where }
+                \\\small{ N }
+                \text{ is the number of elements in the array}\
+                \ \hspace{100cm}
+                $$ 
+{{< /mathjax >}}
+{{< mathjax >}} $$
+                \text{Space: }
+                \\\small{ O(1)}
+                \hspace{100cm}
+                $$ 
+{{< /mathjax >}}
 
 
 
