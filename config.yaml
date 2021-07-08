@@ -38,6 +38,8 @@ params:
   dateFormat: "Mon, Jan 2, 2006"
   readingTime: true
   readingTimeText: "Estimated reading time:"
+  custom_css: ["font-awesome/font-awesome.css"]
+  custom_js: ["font-awesome/font-awesome.js"]
 
 permalinks:
   post: "/:filename/"
