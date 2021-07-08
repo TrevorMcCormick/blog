@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>AWS on Trevor&#39;s Blog</title>
-    <link>https://trmccormick.com/tags/aws/</link>
-    <description>Recent content in AWS on Trevor&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Thu, 04 Feb 2021 11:20:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>🐍 How To Query PostgreSQL in AWS RDS with Python</title>
-      <link>https://trmccormick.com/blog/python_psql/</link>
-      <pubDate>Thu, 04 Feb 2021 11:20:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/blog/python_psql/</guid>
-      <description>In this post I&amp;rsquo;ll walk through:
- how to create a public PostgreSQL instance in RDS using free-tier how to create a table and load it with data from a csv file how to query data from that table using psycopg2  RDS The only thing you have to do in the AWS console is create a Postgres DB instance and make sure it is open to the public (just for this example).</description>
-    </item>
-    
-    <item>
-      <title>☁️ How to Study for the AWS Certified Solutions Architect Associate Exam</title>
-      <link>https://trmccormick.com/blog/aws_csaa/</link>
-      <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/blog/aws_csaa/</guid>
-      <description>Status I am currently scheduled to take the AWS Certified Solutions Architect exam in March 2021. I just finished taking the A Cloud Guru - AWS Certified Solutions Architect Associate SAA-C02 course, and I&amp;rsquo;m continuing to refine my knowledge gaps by building some test projects within AWS before I take the exam.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AWS on Trevor's Blog</title><link>https://trmccormick.com/tags/aws/</link><description>Recent content in AWS on Trevor's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Trevor McCormick</copyright><lastBuildDate>Thu, 04 Feb 2021 11:20:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>🐍 How To Query PostgreSQL in AWS RDS with Python</title><link>https://trmccormick.com/blog/python_psql/</link><pubDate>Thu, 04 Feb 2021 11:20:22 -0400</pubDate><guid>https://trmccormick.com/blog/python_psql/</guid><description>In this post I&amp;rsquo;ll walk through:
+how to create a public PostgreSQL instance in RDS using free-tier how to create a table and load it with data from a csv file how to query data from that table using psycopg2 RDS The only thing you have to do in the AWS console is create a Postgres DB instance and make sure it is open to the public (just for this example).</description></item><item><title>☁️ How to Study for the AWS Certified Solutions Architect Associate Exam</title><link>https://trmccormick.com/blog/aws_csaa/</link><pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate><guid>https://trmccormick.com/blog/aws_csaa/</guid><description>Status I am currently scheduled to take the AWS Certified Solutions Architect exam in March 2021. I just finished taking the A Cloud Guru - AWS Certified Solutions Architect Associate SAA-C02 course
+, and I&amp;rsquo;m continuing to refine my knowledge gaps by building some test projects within AWS before I take the exam.
 Advice so far:
- read through every major service FAQ: IAM, S3, EC2, RDS, VPC, CloudFront, and Route53 draw out AWS architecture diagrams by hand, and be able to draw out full solutions by memory know the highly-available architecture best practices by heart the philosophy of the AWS business model shines through every service there are tons of resources on individual components of AWS, so if you don&amp;rsquo;t understand something, chances are there are in-depth articles explaining it  </description>
-    </item>
-    
-    <item>
-      <title>👨‍💻 How To Build a Serverless Hugo Blog on AWS for $0.51 per month</title>
-      <link>https://trmccormick.com/blog/aws_hugo/</link>
-      <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/blog/aws_hugo/</guid>
-      <description>This post assumes you already have some familiarity with Hugofor building a blog, and you have set up a free-tier AWS account. You don&amp;rsquo;t have to be an expert at either Hugo or AWS to follow along with the guide below. Really the only requirement is that you&amp;rsquo;re able to follow the Hugo quick start guide.
-Below is an AWS architecture diagram I created using diagrams.net, the free version of draw.</description>
-    </item>
-    
-    <item>
-      <title>☁️ How to Study for the AWS Certified Cloud Practitioner Exam</title>
-      <link>https://trmccormick.com/blog/aws_ccp/</link>
-      <pubDate>Sun, 04 Oct 2020 19:08:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/blog/aws_ccp/</guid>
-      <description>Foundations The AWS Certified Cloud Practitioner Exam assumes you have some familiarity with cloud concepts. If you&amp;rsquo;re completely unfamiliar with those, it may benefit you to learn or review some introductory computing concepts. When I was in college, I completed two courses that gave me a great foundation:
-  Stanford CS 101 - Introduction to Computing Principles  Harvard CS50 - Introduction to Computer ScienceThis course features one of my favorite professors of all time &amp;ndash; David Malan.</description>
-    </item>
-    
-  </channel>
-</rss>
+read through every major service FAQ: IAM, S3, EC2, RDS, VPC, CloudFront, and Route53 draw out AWS architecture diagrams by hand, and be able to draw out full solutions by memory know the highly-available architecture best practices by heart the philosophy of the AWS business model shines through every service there are tons of resources on individual components of AWS, so if you don&amp;rsquo;t understand something, chances are there are in-depth articles explaining it</description></item><item><title>👨‍💻 How To Build a Serverless Hugo Blog on AWS for $0.51 per month</title><link>https://trmccormick.com/blog/aws_hugo/</link><pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate><guid>https://trmccormick.com/blog/aws_hugo/</guid><description>This post assumes you already have some familiarity with Hugo
+for building a blog, and you have set up a free-tier AWS account
+. You don&amp;rsquo;t have to be an expert at either Hugo or AWS to follow along with the guide below. Really the only requirement is that you&amp;rsquo;re able to follow the Hugo quick start guide
+.
+Below is an AWS architecture diagram I created using diagrams.net
+, the free version of draw.</description></item><item><title>☁️ How to Study for the AWS Certified Cloud Practitioner Exam</title><link>https://trmccormick.com/blog/aws_ccp/</link><pubDate>Sun, 04 Oct 2020 19:08:22 -0400</pubDate><guid>https://trmccormick.com/blog/aws_ccp/</guid><description>Foundations The AWS Certified Cloud Practitioner Exam assumes you have some familiarity with cloud concepts. If you&amp;rsquo;re completely unfamiliar with those, it may benefit you to learn or review some introductory computing concepts. When I was in college, I completed two courses that gave me a great foundation:
+Stanford CS 101 - Introduction to Computing Principles
+Harvard CS50 - Introduction to Computer Science
+This course features one of my favorite professors of all time &amp;ndash; David Malan
+.</description></item></channel></rss>

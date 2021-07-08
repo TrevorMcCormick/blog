@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>UX on Trevor&#39;s Blog</title>
-    <link>https://trmccormick.com/tags/ux/</link>
-    <description>Recent content in UX on Trevor&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Thu, 08 Jul 2021 09:08:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/ux/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>🏃💨 Save 230ms Page Load Time by Asynchronously Loading Google Fonts</title>
-      <link>https://trmccormick.com/drafts/asynchronous_google_fonts/</link>
-      <pubDate>Thu, 08 Jul 2021 09:08:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/drafts/asynchronous_google_fonts/</guid>
-      <description>How your browser loads this page After you type in the URL to a website, some administrative magic happens behind the scenes. Here is a sketch of the entire website build, with the browser&amp;rsquo;s request and download happening on the left side of the image:
-When you load a website, you can use Chrome&amp;rsquo;s DevToolsto view how your browser is downloading, organizing, and delivering content from a website to your browser.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UX on Trevor's Blog</title><link>https://trmccormick.com/tags/ux/</link><description>Recent content in UX on Trevor's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Trevor McCormick</copyright><lastBuildDate>Thu, 08 Jul 2021 09:08:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/ux/index.xml" rel="self" type="application/rss+xml"/><item><title>🏃💨 Save 230ms Page Load Time Loading Fonts and Icons Asynchronously</title><link>https://trmccormick.com/blog/asynchronous_google_fonts/</link><pubDate>Thu, 08 Jul 2021 09:08:22 -0400</pubDate><guid>https://trmccormick.com/blog/asynchronous_google_fonts/</guid><description>How your browser downloads my website After you type in the URL to a website, some administrative magic happens behind the scenes. Here is a sketch of the entire website build, with the browser&amp;rsquo;s request and download happening on the left side of the image:
+When you load a website, you can use Chrome&amp;rsquo;s DevTools
+to view how your browser is downloading, organizing, and delivering content from a website to your browser.</description></item></channel></rss>
