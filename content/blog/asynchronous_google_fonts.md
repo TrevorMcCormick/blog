@@ -1,12 +1,11 @@
 ---
-title: "🏃💨 Save 230ms Page Load Time by Asynchronously Loading Google Fonts"
+title: "🏃💨 Save 230ms Page Load Time Loading Fonts and Icons Asynchronously"
 date: 2021-07-08T09:08:22-04:00
 draft: false
 tags: [UX, How-To, Hugo]
-font-display: swap; 
 ---
 
-## How your browser loads this page
+## How your browser downloads my website
 
 After you type in the URL to a website, some administrative magic happens behind the scenes. Here is a sketch of the entire website build, with the browser's request and download happening on the left side of the image:
 
@@ -19,6 +18,8 @@ When you load a website, you can use [Chrome's DevTools](https://developer.chrom
 As you can see from the Waterfall on the right side of the image, the types of data are being downloaded in the following order: document, script, sytlesheet, font. The 200 status lets your browser know that the file has been downloaded successfully, and the Initiator column lets you know from where that file originated. There are some other helpful columns, such as size of the file, and how many milliseconds it takes for your browser to download and render that data.
 
 Once your browser starts a connection with the web server that hosts a website, it first tries to download the index.html file, which basically is a set of instructions telling it how to render the page you're asking for. In my site, for example, it has some Javascript files that are hosted in some folder on the webserver, and it has some CSS stylesheets that are hosted in another folder. Once you have downloaded everything from my webserver, then it fetches some other files that are hosted on other webservers. In this instance, the only thing that my site is asking you to load are font files, hosted in two different locations: fonts.googleapis.com, and font awesome's CDN. You can see that at this point, the fonts are not loading asynchronously; they start downloading after the files from my webserver are already downloaded.
+
+## How to host fonts locally instead of through a CDN or an API
 
 In order to asynchronously load our fonts, let's work with Google fonts first. We need to go download the woff files from Google, then put it somewhere on our site locally. [Here is an amazing resource](https://google-webfonts-helper.herokuapp.com/fonts/open-sans?subsets=latin) that will help you generate the correct CSS code to host your fonts locally, and package up the right files for your webserver.
 
@@ -62,6 +63,12 @@ This was kind of a pain, taking about an hour to sort things out. But here is a 
     ```
 3. Finally, I had to take a look at the *font-awesome.css* file and figure out that the CSS class for my brand icons was **fab** instead of **fa**, so I had to go into my *header.html* file to edit the classes.
 
+## What speed improvements you should see
+
 Now, my site loads much faster for users because it is not wasting time going to other webservers. Here is the final screenshot of my Chrome network tab when I load it locally:
 
 ![](/page/images/chrome_network_4.PNG#align-center)
+
+And here is the result in Google Page Speed Insights:
+
+![](/page/images/page_speed_async_fonts_solution.png#align-center)
