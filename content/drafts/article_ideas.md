@@ -18,3 +18,4 @@ draft: false
 * Amazon Connect -- Live Stream Phone Call Transcriptions
 * Build a Disney+ clone for Xavier Basketball videos
 * Xavier Basketball Scout -- Fast Highlights
+* Asynchronously Loading Google Fonts: Saving 200ms Page Load
