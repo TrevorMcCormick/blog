@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Sun, 20 Jun 2021 20:45:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jul 2021 09:08:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🏃💨 Save 230ms Page Load Time by Asynchronously Loading Google Fonts</title>
+      <link>https://trmccormick.com/drafts/asynchronous_google_fonts/</link>
+      <pubDate>Thu, 08 Jul 2021 09:08:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/drafts/asynchronous_google_fonts/</guid>
+      <description>How your browser loads this page After you type in the URL to a website, some administrative magic happens behind the scenes. Here is a sketch of the entire website build, with the browser&amp;rsquo;s request and download happening on the left side of the image:
+When you load a website, you can use Chrome&amp;rsquo;s DevToolsto view how your browser is downloading, organizing, and delivering content from a website to your browser.</description>
+    </item>
+    
     <item>
       <title>485. Max Consecutive Ones</title>
       <link>https://trmccormick.com/leetcode/max_consecutive_ones_485/</link>
@@ -30,15 +40,6 @@
     </item>
     
     <item>
-      <title>⚙️ Learning Data Structures</title>
-      <link>https://trmccormick.com/drafts/algorithms_and_data_structures/</link>
-      <pubDate>Sun, 13 Jun 2021 08:45:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/drafts/algorithms_and_data_structures/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>🐍 How To Query PostgreSQL in AWS RDS with Python</title>
       <link>https://trmccormick.com/blog/python_psql/</link>
       <pubDate>Thu, 04 Feb 2021 11:20:22 -0400</pubDate>
@@ -46,6 +47,15 @@
       <guid>https://trmccormick.com/blog/python_psql/</guid>
       <description>In this post I&amp;rsquo;ll walk through:
  how to create a public PostgreSQL instance in RDS using free-tier how to create a table and load it with data from a csv file how to query data from that table using psycopg2  RDS The only thing you have to do in the AWS console is create a Postgres DB instance and make sure it is open to the public (just for this example).</description>
+    </item>
+    
+    <item>
+      <title>🤞 Article Ideas</title>
+      <link>https://trmccormick.com/drafts/article_ideas/</link>
+      <pubDate>Thu, 04 Feb 2021 11:20:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/drafts/article_ideas/</guid>
+      <description> Automating the Web with Python: Requests, BeautifulSoup, and Selenium  https://scrapingant.com/blog/scrape-dynamic-website-with-python   Adding Functionality to the Adobe Audience Manager API with Python One-Page Visualization Cheatsheet for Telling Stories with Data Data Engineering Frameworks   Volume, Velocity, Variety Structured, Unstructured, Semi-structured Batch versus Streaming Storage: Data Warehouses, Data Lakes, Lakehouse Platforms Data Science Workflow: Ingest, Clean, Curate, Analyze, Democratize   Removing PII Across Time Travel Versions with Databricks Amazon Connect &amp;ndash; Live Stream Phone Call Transcriptions Build a Disney+ clone for Xavier Basketball videos Xavier Basketball Scout &amp;ndash; Fast Highlights Asynchronously Loading Google Fonts: Saving 200ms Page Load  </description>
     </item>
     
     <item>

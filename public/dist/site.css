@@ -201,18 +201,3 @@ table tr { border-bottom: 1px dotted #aeadad; }
 }
 
 /* Trevor's edit's below */
-
-/* GOOGLE FONTS */
-/* open-sans-regular - latin */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../styles/fonts/open-sans-v20-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../styles/fonts/open-sans-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../styles/fonts/open-sans-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../styles/fonts/open-sans-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../styles/fonts/open-sans-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../styles/fonts/open-sans-v20-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
-  }

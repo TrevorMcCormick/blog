@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trevor McCormick &middot; Blog</title>
+        <meta name="description" content="How your browser loads this page After you type in the URL to a website, some administrative magic happens behind the scenes. Here is a sketch of the entire website build, with the browser&rsquo;s request and download happening on the left side of the image:
+When you load a website, you can use Chrome&rsquo;s DevToolsto view how your browser is downloading, organizing, and delivering content from a website to your browser.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.82.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="stylesheet" href="https://trmccormick.com/font-awesome/font-awesome.css">
+
+<script defer src="https://trmccormick.com/font-awesome/font-awesome.js"></script>
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" aria-label="Github" href="https://github.com/TrevorMcCormick" rel="me">
+                                <i class="fab fa-github-alt" aria-hidden="true"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" aria-label="LinkedIn" href="https://linkedin.com/in/trevormccormick/" rel="me">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" aria-label="Send an Email" href="mailto:trevor.ryan.mccormick@gmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a href="/blog/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a href="/about/">About</a>
+    </li>
+
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title">🏃💨 Save 230ms Page Load Time by Asynchronously Loading Google Fonts</h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    <h2 id="how-your-browser-loads-this-page">How your browser loads this page</h2>
+<p>After you type in the URL to a website, some administrative magic happens behind the scenes. Here is a sketch of the entire website build, with the browser&rsquo;s request and download happening on the left side of the image:</p>
+<p><img src="/page/images/trmccormick.com.jpg#align-center" alt=""></p>
+<p>When you load a website, you can use <a href="https://developer.chrome.com/docs/devtools/overview/"
+
+ target="_blank"><strong>Chrome&rsquo;s DevTools</strong></a>
+ to view how your browser is downloading, organizing, and delivering content from a website to your browser. Here is a quick snippet of the Network tab, with my cache disabled to show what a full request looks like:</p>
+<p><img src="/page/images/chrome_network_1.PNG#align-center" alt=""></p>
+<p>As you can see from the Waterfall on the right side of the image, the types of data are being downloaded in the following order: document, script, sytlesheet, font. The 200 status lets your browser know that the file has been downloaded successfully, and the Initiator column lets you know from where that file originated. There are some other helpful columns, such as size of the file, and how many milliseconds it takes for your browser to download and render that data.</p>
+<p>Once your browser starts a connection with the web server that hosts a website, it first tries to download the index.html file, which basically is a set of instructions telling it how to render the page you&rsquo;re asking for. In my site, for example, it has some Javascript files that are hosted in some folder on the webserver, and it has some CSS stylesheets that are hosted in another folder. Once you have downloaded everything from my webserver, then it fetches some other files that are hosted on other webservers. In this instance, the only thing that my site is asking you to load are font files, hosted in two different locations: fonts.googleapis.com, and font awesome&rsquo;s CDN. You can see that at this point, the fonts are not loading asynchronously; they start downloading after the files from my webserver are already downloaded.</p>
+<p>In order to asynchronously load our fonts, let&rsquo;s work with Google fonts first. We need to go download the woff files from Google, then put it somewhere on our site locally. <a href="https://google-webfonts-helper.herokuapp.com/fonts/open-sans?subsets=latin"
+
+ target="_blank"><strong>Here is an amazing resource</strong></a>
+ that will help you generate the correct CSS code to host your fonts locally, and package up the right files for your webserver.</p>
+<p>If you&rsquo;re hosting a Hugo blog, here is the process I went through:</p>
+<ol>
+<li>Download the correct fonts from the above link. Package them up in a directory called <em>fonts</em>. I put mine in the <em>public/styles</em> directory.</li>
+<li>Create a new section in <em>public/dist/site.css</em> and add the CSS snippet from the above link.</li>
+<li>If you were to reload your site at this point in localhost, you would see the following change, indicating that the Google fonts are now being hosted locally, so they start loading earlier. However, the site still has some code that is telling the browser to also go download the fonts from the Google fonts server.
+<img src="/page/images/chrome_network_2.PNG#align-center" alt=""></li>
+<li>To take out the last call to Google Fonts, you need to delete the <!-- raw HTML omitted --> reference to the Google fonts in your <em>footer.html</em> file. Once you do that, you&rsquo;ll see those calls go away, and your page speed increase:
+<img src="/page/images/chrome_network_3.PNG#align-center" alt=""></li>
+</ol>
+<p>So in completing these four steps, we&rsquo;ve done two things: we&rsquo;ve minimized the user&rsquo;s browser&rsquo;s workload, and we&rsquo;ve improved the user experience by delivering content to their screen faster (in these screenshots, it looks like it improved it by quite a bit, but we&rsquo;ll check with <a href="https://developers.google.com/speed/pagespeed/insights/"
+
+ target="_blank"><strong>Google Page Insights</strong></a>
+ to make sure.)</p>
+<p>The last thing we are going to do is just repeat the process for the font-awesome fonts. They have a <a href="https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself"
+
+ target="_blank"><strong>great tutorial</strong></a>
+ on how to host their icons locally.</p>
+<p>This was kind of a pain, taking about an hour to sort things out. But here is a quick overview of what I did different for font-awesome:</p>
+<ol>
+<li>
+<p>In my <em>config.yaml</em> file, I added a section under params, so it looks like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">custom_css</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;font-awesome/font-awesome.css&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w">    </span><span class="nt">custom_js</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;font-awesome/font-awesome.js&#34;</span><span class="p">]</span><span class="w">
+</span></code></pre></div><p>In my static folder, I added a new folder called <em>font-awesome</em>, and I placed 3 things in it from the above font-awesome link:</p>
+<ol>
+<li><em>all.css</em> (renamed to <em>font-awesome.css</em>)
+Within this file, I edited the links to the actual SVG files so that they would match where I put them in the static directory</li>
+<li><em>brands.js</em> (renamed to <em>font-awesome.js</em>)
+I think at this time I only use font-awesome for the brands that are free. At some point I&rsquo;d like to pay for the Pro version, but $99/year is too steep for icon hoarding 🙂</li>
+<li>the webfonts directory (this contains all of the SVG paths that draw the icons)</li>
+</ol>
+</li>
+<li>
+<p>In the <em>extra-in-head.html</em> partial, I added the following code, which lets Hugo know how to use the new site parameters I just declared.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ range .Site.Params.custom_css -}}
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ . | absURL }}&#34;</span><span class="p">&gt;</span>
+{{- end }}
+
+{{ range .Site.Params.custom_js -}}
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ . | absURL }}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+{{- end }}
+</code></pre></div></li>
+<li>
+<p>Finally, I had to take a look at the <em>font-awesome.css</em> file and figure out that the CSS class for my brand icons was <strong>fab</strong> instead of <strong>fa</strong>, so I had to go into my <em>header.html</em> file to edit the classes.</p>
+</li>
+</ol>
+<p>Now, my site loads much faster for users because it is not wasting time going to other webservers. Here is the final screenshot of my Chrome network tab when I load it locally:</p>
+<p><img src="/page/images/chrome_network_4.PNG#align-center" alt=""></p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/ux/">UX</a>, 
+            
+                <a href="/tags/how-to/">How-To</a>, 
+            
+                <a href="/tags/hugo/">Hugo</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+
+        
+
+
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=%f0%9f%8f%83%f0%9f%92%a8%20Save%20230ms%20Page%20Load%20Time%20by%20Asynchronously%20Loading%20Google%20Fonts&url=https%3a%2f%2ftrmccormick.com%2fdrafts%2fasynchronous_google_fonts%2f&summary="
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;" aria-label="Share on LinkedIn">
+               <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+        
+    </div>
+</footer>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <a class="button-square button-jump-top js-jump-top" href="#" aria-label="Back to Top">
+                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2021 /  Made with &#128153; in Wyandotte, MI</span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://trmccormick.com/js/jquery-1.11.3.min.js"></script>
+        <script src="https://trmccormick.com/js/jquery.fitvids.js"></script>
+        <script src="https://trmccormick.com/js/scripts.js"></script>
+        <link rel="stylesheet" href="https://trmccormick.com/dist/site.css">
+        <link rel="stylesheet" href="https://trmccormick.com/dist/syntax.css">
+    </body>
+</html>
+

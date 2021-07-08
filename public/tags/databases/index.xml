@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Sun, 13 Jun 2021 08:45:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/databases/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>⚙️ Learning Data Structures</title>
-      <link>https://trmccormick.com/drafts/algorithms_and_data_structures/</link>
-      <pubDate>Sun, 13 Jun 2021 08:45:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/drafts/algorithms_and_data_structures/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 04 Feb 2021 11:20:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/databases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🐍 How To Query PostgreSQL in AWS RDS with Python</title>
       <link>https://trmccormick.com/blog/python_psql/</link>

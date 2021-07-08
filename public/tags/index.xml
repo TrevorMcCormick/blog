@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Trevor McCormick</copyright>
-    <lastBuildDate>Sun, 20 Jun 2021 20:45:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jul 2021 09:08:22 -0400</lastBuildDate><atom:link href="https://trmccormick.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How-To</title>
+      <link>https://trmccormick.com/tags/how-to/</link>
+      <pubDate>Thu, 08 Jul 2021 09:08:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/tags/how-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://trmccormick.com/tags/hugo/</link>
+      <pubDate>Thu, 08 Jul 2021 09:08:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UX</title>
+      <link>https://trmccormick.com/tags/ux/</link>
+      <pubDate>Thu, 08 Jul 2021 09:08:22 -0400</pubDate>
+      
+      <guid>https://trmccormick.com/tags/ux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Algorithms</title>
       <link>https://trmccormick.com/tags/algorithms/</link>
@@ -36,15 +63,6 @@
     </item>
     
     <item>
-      <title>Databases</title>
-      <link>https://trmccormick.com/tags/databases/</link>
-      <pubDate>Sun, 13 Jun 2021 08:45:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/tags/databases/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>AWS</title>
       <link>https://trmccormick.com/tags/aws/</link>
       <pubDate>Thu, 04 Feb 2021 11:20:22 -0400</pubDate>
@@ -54,11 +72,11 @@
     </item>
     
     <item>
-      <title>How-To</title>
-      <link>https://trmccormick.com/tags/how-to/</link>
+      <title>Databases</title>
+      <link>https://trmccormick.com/tags/databases/</link>
       <pubDate>Thu, 04 Feb 2021 11:20:22 -0400</pubDate>
       
-      <guid>https://trmccormick.com/tags/how-to/</guid>
+      <guid>https://trmccormick.com/tags/databases/</guid>
       <description></description>
     </item>
     
@@ -95,15 +113,6 @@
       <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
       
       <guid>https://trmccormick.com/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://trmccormick.com/tags/hugo/</link>
-      <pubDate>Tue, 02 Feb 2021 11:20:22 -0400</pubDate>
-      
-      <guid>https://trmccormick.com/tags/hugo/</guid>
       <description></description>
     </item>
     
